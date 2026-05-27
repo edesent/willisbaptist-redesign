@@ -167,10 +167,22 @@ export const beliefs = [
 ] as const;
 
 export const legacyMoments = [
-  "Founding Pastor Dr. Jim McKinnies has been publicly honored for more than four decades of faithful ministry at Willis Baptist Church.",
-  "The church celebrated its 40th anniversary and the conferring of a Doctor of Divinity degree in October 2019.",
-  "That long continuity remains part of the church's testimony of faithfulness, gratitude, and perseverance.",
+  "1979 — Pastor and Mrs. McKinnies arrive at the Meridian Street church with 26 faithful servants from Yost Baptist Church of Milan, MI.",
+  "1999 — As the church outgrows its building, the present facility on Bunton Road is built.",
+  "October 2019 — The church marks 40 years of ministry, and a Doctor of Divinity is conferred upon Dr. McKinnies.",
+  "Through the years — Faithful gospel preaching, soulwinning, and pastoral care. To God be the glory.",
 ] as const;
+
+export const legacyStory = [
+  "In 1979, Pastor and Mrs. McKinnies came to the Meridian Street church with 26 faithful servants from the Yost Baptist Church of Milan, Michigan.",
+  "They labored together and God blessed the work. As the congregation outgrew its building, the church began constructing its present facility on Bunton Road in 1999 — the building it occupies today.",
+  "Over more than 40 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
+] as const;
+
+export const pastorQuote = {
+  text: "A ministry is made up of many faithful servants who serve and make it what it is.",
+  author: "Pastor Jim McKinnies",
+} as const;
 
 export const gospelSteps = [
   {

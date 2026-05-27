@@ -25,9 +25,10 @@ import {
   beliefs,
   contactCards,
   gospelSteps,
-  heroStats,
   legacyMoments,
+  legacyStory,
   ministries,
+  pastorQuote,
   primaryNav,
   serviceTimes,
   site,
@@ -151,7 +152,7 @@ function HomePage() {
         <div className="shell hero-shell">
           <div className="hero-copy">
             <p className="eyebrow">Willis, Michigan</p>
-            <h1>Willis Baptist Church</h1>
+            <h1>Welcome to Willis Baptist Church</h1>
             <p className="hero-lede">
               A local church family seeking to shine the light of the Gospel in the darkness of
               this world through faithful preaching, warm fellowship, and ministry to our community.
@@ -163,14 +164,6 @@ function HomePage() {
               <Link className="button button-secondary" href="/gospel">
                 Read the Gospel Message
               </Link>
-            </div>
-            <div className="hero-stat-grid">
-              {heroStats.map(([label, value]) => (
-                <article className="hero-stat" key={label}>
-                  <span>{label}</span>
-                  <strong>{value}</strong>
-                </article>
-              ))}
             </div>
           </div>
 
@@ -193,7 +186,6 @@ function HomePage() {
               />
             </div>
             <aside className="hero-card">
-              <p className="hero-card-title">Welcome to Willis Baptist Church</p>
               <span className="hero-card-label">Scripture focus</span>
               <blockquote>{site.verse}</blockquote>
               <cite>{site.verseReference}</cite>
@@ -219,10 +211,10 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-dark">
         <div className="shell services-layout">
           <div className="section-heading">
-            <p className="eyebrow">Weekly rhythm</p>
+            <p className="eyebrow">Service Times</p>
             <h2>Gather with us throughout the week.</h2>
             <p>
               From Sunday School and worship services to Wednesday Bible study and Friday Reformers
@@ -281,10 +273,11 @@ function HomePage() {
         <div className="shell legacy-feature">
           <div className="legacy-copy">
             <p className="eyebrow">Founding pastor</p>
-            <h2>Thankful for decades of faithful pastoral ministry.</h2>
+            <h2>Over 40 years of faithful pastoral ministry.</h2>
             <p>
-              Willis Baptist Church is grateful for the faithful service of Dr. Jim McKinnies and
-              the long testimony of the church family God has built through the years.
+              Since 1979, God has built Willis Baptist Church through the faithful ministry of
+              Pastor and Mrs. McKinnies — from a small group of 26 servants to the church family
+              on Bunton Road today.
             </p>
             <ul className="check-list">
               {legacyMoments.map((item) => (
@@ -437,7 +430,7 @@ function LegacyPage() {
       <PageHero
         eyebrow="Church Legacy"
         title="Honoring faithful pastoral leadership."
-        body="The church gives thanks for decades of faithful pastoral leadership and for God's continued work through the Willis Baptist family."
+        body="Since 1979, God has built Willis Baptist Church through the faithful ministry of Pastor and Mrs. McKinnies and a church family devoted to the gospel of Jesus Christ."
       />
 
       <section className="section">
@@ -452,11 +445,17 @@ function LegacyPage() {
               />
             </div>
             <div className="legacy-panel-copy">
-              <p className="eyebrow">Founding Pastor</p>
+              <p className="eyebrow">Founding Pastor · 1979–2019</p>
               <h2>Dr. Jim McKinnies</h2>
-              <p>
-                Willis Baptist Church celebrates Dr. and Mrs. McKinnies for founding the church
-                and thanks them for decades of faithful service, pastoral care, and gospel witness.
+              {legacyStory.map((para) => (
+                <p key={para}>{para}</p>
+              ))}
+              <blockquote className="pull-quote">
+                “{pastorQuote.text}”
+                <cite>— {pastorQuote.author}</cite>
+              </blockquote>
+              <p className="life-verse">
+                Pastor and Mrs. McKinnies share the same life verse — {site.verseReference}.
               </p>
             </div>
           </div>
