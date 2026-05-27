@@ -1,14 +1,21 @@
 import {
   ArrowRight,
   BookMarked,
+  BookOpen,
+  Bus,
   CalendarDays,
   CheckCircle2,
   Clock3,
   Cross,
+  Globe,
   HeartHandshake,
+  LifeBuoy,
+  type LucideIcon,
   MapPin,
   MessageCircleHeart,
+  Music,
   Phone,
+  Users,
 } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -64,6 +71,15 @@ const aliases: Record<string, keyof typeof titleMap> = {
   gospel: "gospel",
   "the-good-news": "gospel",
   contact: "contact",
+};
+
+const ministryIcons: Record<string, LucideIcon> = {
+  "sunday-school": BookOpen,
+  "bus-ministry": Bus,
+  "youth-group": Users,
+  "ladies-missionary-society": Globe,
+  "reformers-unanimous": LifeBuoy,
+  media: Music,
 };
 
 function routeKey(params: Params) {
@@ -177,6 +193,7 @@ function HomePage() {
               />
             </div>
             <aside className="hero-card">
+              <p className="hero-card-title">Welcome to Willis Baptist Church</p>
               <span className="hero-card-label">Scripture focus</span>
               <blockquote>{site.verse}</blockquote>
               <cite>{site.verseReference}</cite>
@@ -393,17 +410,11 @@ function MinistriesPage() {
 
       <section className="section">
         <div className="shell ministry-grid">
-          {ministries.map((ministry) => (
-            <article className="ministry-card" id={ministry.slug} key={ministry.slug}>
-              <div className="ministry-image">
-                <Image
-                  src={ministry.image}
-                  alt={ministry.imageAlt}
-                  fill
-                  sizes="(max-width: 900px) 100vw, 28vw"
-                />
-              </div>
-              <div className="ministry-copy">
+          {ministries.map((ministry) => {
+            const Icon = ministryIcons[ministry.slug] ?? HeartHandshake;
+            return (
+              <article className="ministry-card" id={ministry.slug} key={ministry.slug}>
+                <Icon size={22} />
                 <h2>{ministry.title}</h2>
                 <p>{ministry.summary}</p>
                 <ul className="bullet-list">
@@ -411,9 +422,9 @@ function MinistriesPage() {
                     <li key={detail}>{detail}</li>
                   ))}
                 </ul>
-              </div>
-            </article>
-          ))}
+              </article>
+            );
+          })}
         </div>
       </section>
     </>

@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, Phone, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -28,12 +29,16 @@ export function Header() {
       </div>
 
       <nav className="nav-shell" aria-label="Primary">
-        <Link className="brand" href="/" onClick={close}>
-          <span className="brand-mark">WB</span>
-          <span>
-            <strong>{site.name}</strong>
-            <small>{site.city}</small>
-          </span>
+        <Link className="brand" href="/" onClick={close} aria-label={`${site.name} home`}>
+          <Image
+            className="brand-logo"
+            src="/willis/willis-logo2.png"
+            alt={site.name}
+            width={856}
+            height={337}
+            priority
+            sizes="220px"
+          />
         </Link>
 
         <button
@@ -53,9 +58,9 @@ export function Header() {
               {label}
             </Link>
           ))}
-          <a className="button button-primary" href={site.facebook} target="_blank" rel="noreferrer">
-            Follow on Facebook
-          </a>
+          <Link className="button button-primary" href="/visit">
+            Plan a Visit
+          </Link>
         </div>
       </nav>
 

@@ -10,8 +10,8 @@ export const site = {
   phone: "(734) 461-0352",
   email: "WBC@willisbaptist.org",
   verse:
-    "...forgetting those things which are behind, and reaching forth unto those things which are before, I press toward the mark for the prize of the high calling of God in Christ Jesus.",
-  verseReference: "Philippians 3:13b-14",
+    "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
+  verseReference: "Proverbs 3:5-6",
   originalUrl: "https://www.willisbaptist.org/",
   mapUrl: "https://maps.google.com/?q=8687+Bunton+Rd,+Willis,+MI+48191",
   facebook: "https://www.facebook.com/Willis-Baptist-Church-117478031605444/",
@@ -78,23 +78,19 @@ export const welcomePoints = [
 
 export const ministries = [
   {
-    slug: "reformers-unanimous",
-    title: "Reformers Unanimous",
-    summary: "A Friday night addictions ministry built on the timeless principles of Scripture in a warm, non-threatening setting.",
-    image: "/willis/drive-in.jpg",
-    imageAlt: "Willis Baptist outdoor service during the COVID-19 season.",
+    slug: "sunday-school",
+    title: "Sunday School",
+    summary: "Bible teaching for all ages and one of the core weekly touchpoints for the church family.",
     details: [
-      "Led by Tim and Lora Johnson.",
-      "Meets Fridays from 7:00 to 9:00 PM.",
-      "Hosted in the Sunday School building.",
+      "Classes for children, teens, and adults.",
+      "A long-running part of the church's weekly rhythm.",
+      "Designed to help members grow through regular Bible study.",
     ],
   },
   {
     slug: "bus-ministry",
     title: "Bus Ministry",
-    summary: "For more than 35 years the church's bus ministry has brought children to Sunday School and church while building lasting relationships.",
-    image: "/willis/bus-ministry.jpg",
-    imageAlt: "Willis Baptist Church bus ministry vehicle.",
+    summary: "For decades the church's bus ministry has brought children to Sunday School and church while building lasting relationships.",
     details: [
       "Neighborhood outreach through transportation and relationships.",
       "Focused on children and families who may need help getting to church.",
@@ -104,9 +100,7 @@ export const ministries = [
   {
     slug: "youth-group",
     title: "Youth Group",
-    summary: "Teen camp, nursing home ministry, and discipleship opportunities that move students from attendance to service.",
-    image: "/willis/teen-camp.jpg",
-    imageAlt: "A group of teens at a youth camp outing.",
+    summary: "Teen camp, outreach, and discipleship opportunities that move students from attendance to service.",
     details: [
       "Teen camp outings and group activities.",
       "Regular opportunities to minister to others.",
@@ -117,32 +111,26 @@ export const ministries = [
     slug: "ladies-missionary-society",
     title: "Ladies Missionary Society",
     summary: "Women of the church assisting and encouraging missionaries serving around the world.",
-    image: "/willis/anniversary.jpg",
-    imageAlt: "Willis Baptist Church celebrating a ministry milestone.",
     details: [
       "Prayer and encouragement for missionaries.",
       "A practical expression of the church's global concern.",
-      "Multi-generational support ministry.",
+      "A multi-generational support ministry.",
     ],
   },
   {
-    slug: "sunday-school",
-    title: "Sunday School",
-    summary: "Bible teaching for all ages and one of the core weekly touchpoints for the church family.",
-    image: "/willis/nursing-home.jpg",
-    imageAlt: "Willis Baptist teens gathered for ministry.",
+    slug: "reformers-unanimous",
+    title: "Reformers Unanimous",
+    summary: "An addictions program built on the timeless principles of Scripture, offered in a warm, non-threatening setting.",
     details: [
-      "Classes for children, teens, and adults.",
-      "A long-running part of the church's weekly rhythm.",
-      "Designed to help members grow through regular Bible study.",
+      "Led by Tim and Lora Johnson.",
+      "Meets Fridays from 7:00 to 9:00 PM.",
+      "Hosted in the Sunday School building.",
     ],
   },
   {
     slug: "media",
     title: "Music and Media",
-    summary: "Sermon audio, choir music, and archived teaching help the church family keep Scripture and worship close throughout the week.",
-    image: "/willis/pastor.jpg",
-    imageAlt: "Portrait of Dr. Jim and Mrs. McKinnies.",
+    summary: "Sermon audio, music, and archived teaching help the church family keep Scripture and worship close throughout the week.",
     details: [
       "A growing place for sermons, music, and special services.",
       "Helpful for members who are traveling, shut in, or catching up.",
