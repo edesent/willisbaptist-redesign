@@ -761,8 +761,9 @@ p {
   overflow: hidden;
   border-radius: var(--radius);
   box-shadow: var(--shadow-strong);
+  width: 100%;
+  max-width: 100%;
   aspect-ratio: 4 / 3;
-  min-height: 340px;
 }
 
 .map-frame iframe {
