@@ -319,6 +319,55 @@ function HomePage() {
           </Link>
         </div>
       </section>
+
+      <section className="section section-soft" id="contact">
+        <div className="shell contact-home-grid">
+          <div className="contact-home-copy">
+            <p className="eyebrow">Contact Us</p>
+            <h2>Come visit us in Willis.</h2>
+            <p>
+              We would love to have you join us. Reach out with any questions, or simply come and
+              worship with us this week — you are always welcome at Willis Baptist Church.
+            </p>
+            <div className="contact-detail-list">
+              <a className="contact-detail" href="tel:7344610352">
+                <Phone size={18} />
+                <span>
+                  <small>Call the church</small>
+                  <strong>{site.phone}</strong>
+                </span>
+              </a>
+              <a className="contact-detail" href={`mailto:${site.email}`}>
+                <MessageCircleHeart size={18} />
+                <span>
+                  <small>Email the church</small>
+                  <strong>{site.email}</strong>
+                </span>
+              </a>
+              <a className="contact-detail" href={site.mapUrl} target="_blank" rel="noreferrer">
+                <MapPin size={18} />
+                <span>
+                  <small>Visit us</small>
+                  <strong>{site.address}</strong>
+                </span>
+              </a>
+            </div>
+            <div className="action-stack">
+              <a className="button button-primary" href={site.mapUrl} target="_blank" rel="noreferrer">
+                Get Directions
+              </a>
+            </div>
+          </div>
+          <div className="map-frame">
+            <iframe
+              title="Map to Willis Baptist Church"
+              src="https://www.google.com/maps?q=8687+Bunton+Rd,+Willis,+MI+48191&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
