@@ -19,14 +19,37 @@ const sans = Work_Sans({
   display: "swap",
 });
 
+const description =
+  "Willis Baptist Church in Willis, Michigan — a local KJV Baptist church committed to Scripture and the gospel of Jesus Christ, faithfully serving families since 1979.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://willisbaptist-redesign.vercel.app"),
   title: {
     default: `${site.name} | Willis, MI`,
     template: `%s | ${site.name}`,
   },
-  description:
-    "Willis Baptist Church in Willis, Michigan, is a local Baptist church committed to Scripture, the gospel of Jesus Christ, and faithful ministry to families.",
+  description,
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title: `${site.name} — Willis, Michigan`,
+    description,
+    url: "/",
+    images: [
+      {
+        url: "/willis/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Willis Baptist Church building with steeple in Willis, Michigan.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${site.name} — Willis, Michigan`,
+    description,
+    images: ["/willis/og.jpg"],
+  },
 };
 
 export const viewport: Viewport = {
