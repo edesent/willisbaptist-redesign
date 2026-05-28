@@ -769,6 +769,7 @@ p {
   width: 100%;
   max-width: 100%;
   aspect-ratio: 4 / 3;
+  isolation: isolate;
 }
 
 .map-frame iframe {
@@ -777,6 +778,16 @@ p {
   width: 100%;
   height: 100%;
   border: 0;
+  filter: saturate(0.55) sepia(0.28) hue-rotate(28deg) brightness(0.92) contrast(1.06);
+}
+
+.map-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, rgba(24, 49, 38, 0.38), rgba(126, 74, 62, 0.22));
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 .beliefs-grid,
