@@ -123,9 +123,13 @@ p {
   color: rgba(255, 248, 240, 0.82);
 }
 
-.section-dark .service-card h3,
+.section-dark .service-card h3 {
+  color: var(--green-deep);
+}
+
 .section-dark .service-card strong {
-  color: var(--gold);
+  color: var(--green-deep);
+  letter-spacing: 0.02em;
 }
 
 .eyebrow {
@@ -974,6 +978,10 @@ p {
 
   .brand-logo {
     height: 60px;
+  }
+
+  .service-card svg {
+    display: none;
   }
 
   .mobile-nav {
