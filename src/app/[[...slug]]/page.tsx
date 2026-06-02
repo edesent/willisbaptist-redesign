@@ -359,15 +359,17 @@ function HomePage() {
             </div>
           </div>
           <div className="map-column">
-            <div className="map-frame">
-              <iframe
-                title="Map to Willis Baptist Church"
-                src="https://www.google.com/maps?q=Willis+Baptist+Church,+8687+Bunton+Rd,+Willis,+MI+48191&output=embed"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+            <div className="sign-frame">
+              <Image
+                src="/willis/sign-off-bunton-rd.png"
+                alt="Willis Baptist Church road sign on Bunton Road, listing service times for Sunday School, Worship, and Wednesday Bible study."
+                fill
+                sizes="(max-width: 900px) 100vw, 45vw"
               />
             </div>
-            <p className="map-note">Parking and the church entrance are off Bunton Road.</p>
+            <p className="map-note">
+              The church sign and parking lot entrance are on Bunton Road.
+            </p>
           </div>
         </div>
       </section>

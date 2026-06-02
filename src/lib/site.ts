@@ -28,7 +28,7 @@ export const primaryNav = [
 ] as const;
 
 export const heroStats = [
-  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 11:00 AM · Evening 6:00 PM"],
+  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 10:30 AM · Evening 6:00 PM"],
   ["Midweek gathering", "Wednesday Bible study at 7:00 PM"],
   ["Address", "8687 Bunton Road in Willis, Michigan"],
 ] as const;
@@ -41,7 +41,7 @@ export const serviceTimes = [
   },
   {
     title: "Morning Worship",
-    time: "11:00 AM",
+    time: "10:30 AM",
     detail: "Congregational worship and preaching from the King James Bible.",
   },
   {
