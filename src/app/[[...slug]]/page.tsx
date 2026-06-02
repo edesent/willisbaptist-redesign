@@ -406,15 +406,19 @@ function VisitPage() {
             </div>
           </div>
 
-          <div className="service-grid">
-            {serviceTimes.map((service) => (
-              <article className="service-card compact" key={service.title}>
-                <CalendarDays size={19} />
-                <h3>{service.title}</h3>
-                <strong>{service.time}</strong>
-                <p>{service.detail}</p>
-              </article>
-            ))}
+          <div className="visit-services">
+            <p className="eyebrow">Weekly Schedule</p>
+            <h2>Service Times</h2>
+            <div className="service-grid">
+              {serviceTimes.map((service) => (
+                <article className="service-card compact" key={service.title}>
+                  <CalendarDays size={19} />
+                  <h3>{service.title}</h3>
+                  <strong>{service.time}</strong>
+                  <p>{service.detail}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
