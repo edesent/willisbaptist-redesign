@@ -358,13 +358,16 @@ function HomePage() {
               </a>
             </div>
           </div>
-          <div className="map-frame">
-            <iframe
-              title="Map to Willis Baptist Church"
-              src="https://www.google.com/maps?q=8687+Bunton+Rd,+Willis,+MI+48191&output=embed"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div className="map-column">
+            <div className="map-frame">
+              <iframe
+                title="Map to Willis Baptist Church"
+                src="https://www.google.com/maps?q=Willis+Baptist+Church,+8687+Bunton+Rd,+Willis,+MI+48191&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <p className="map-note">Parking and the church entrance are off Bunton Road.</p>
           </div>
         </div>
       </section>
@@ -387,9 +390,9 @@ function VisitPage() {
             <p className="eyebrow">Location</p>
             <h2>{site.address}</h2>
             <p>
-              Willis Baptist Church is located on Bunton Road in Willis, Michigan. If you are
-              planning your first visit, you are welcome to call ahead or simply join us at the next
-              scheduled service.
+              Willis Baptist Church is located in Willis, Michigan. The parking lot entrance is
+              off Bunton Road. If you are planning your first visit, you are welcome to call ahead
+              or simply join us at the next scheduled service.
             </p>
             <div className="action-stack">
               <a className="button button-primary" href={site.mapUrl} target="_blank" rel="noreferrer">

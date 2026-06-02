@@ -3,9 +3,9 @@ export const site = {
   shortName: "Willis Baptist",
   tagline: "Shining the light of the Gospel in the darkness of this world.",
   city: "Willis, Michigan",
-  addressLine1: "8687 Bunton Rd.",
+  addressLine1: "8687 Bunton Road",
   addressLine2: "Willis, MI 48191",
-  address: "8687 Bunton Rd., Willis, MI 48191",
+  address: "8687 Bunton Road, Willis, MI 48191",
   mailingAddress: "PO Box 39, Willis, MI 48191",
   phone: "(734) 461-0352",
   email: "WBC@willisbaptist.org",
@@ -13,7 +13,7 @@ export const site = {
     "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
   verseReference: "Proverbs 3:5-6",
   originalUrl: "https://www.willisbaptist.org/",
-  mapUrl: "https://maps.google.com/?q=8687+Bunton+Rd,+Willis,+MI+48191",
+  mapUrl: "https://maps.google.com/?q=Willis+Baptist+Church,+8687+Bunton+Rd,+Willis,+MI+48191",
   facebook: "https://www.facebook.com/Willis-Baptist-Church-117478031605444/",
 };
 
@@ -30,7 +30,7 @@ export const primaryNav = [
 export const heroStats = [
   ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 11:00 AM · Evening 6:00 PM"],
   ["Midweek gathering", "Wednesday Bible study at 7:00 PM"],
-  ["Address", "8687 Bunton Rd. in Willis, Michigan"],
+  ["Address", "8687 Bunton Road in Willis, Michigan"],
 ] as const;
 
 export const serviceTimes = [

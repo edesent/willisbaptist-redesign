@@ -765,6 +765,20 @@ p {
   font-size: 1.04rem;
 }
 
+.map-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.map-note {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  opacity: 0.75;
+  text-align: center;
+}
+
 .map-frame {
   position: relative;
   overflow: hidden;
