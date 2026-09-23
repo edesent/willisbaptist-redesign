@@ -1200,3 +1200,80 @@ p {
     height: 54px;
   }
 }
+
+/* Legacy page: portrait at its true 4:5 shape beside the story,
+   then milestones paired with the building and anniversary photos. */
+.legacy-story {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.legacy-story-portrait,
+.legacy-photo-pair figure {
+  margin: 0;
+}
+
+.legacy-story-portrait {
+  position: sticky;
+  top: calc(env(safe-area-inset-top, 0px) + 110px);
+}
+
+.legacy-story-image,
+.legacy-photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+.legacy-story-image {
+  aspect-ratio: 584 / 746;
+}
+
+.legacy-photo {
+  aspect-ratio: 4 / 3;
+}
+
+.legacy-story-image img,
+.legacy-photo img {
+  object-fit: cover;
+}
+
+.legacy-story-portrait figcaption,
+.legacy-photo-pair figcaption {
+  margin-top: 12px;
+  color: var(--green);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.legacy-story .legacy-panel-copy {
+  max-width: 680px;
+}
+
+.legacy-milestones {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.legacy-photo-pair {
+  display: grid;
+  gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .legacy-story,
+  .legacy-milestones {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-story-portrait {
+    position: static;
+    max-width: 380px;
+  }
+}

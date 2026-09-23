@@ -492,32 +492,37 @@ function LegacyPage() {
       />
 
       <section className="section">
-        <div className="shell legacy-page-grid">
-          <div className="legacy-panel">
-            <div className="legacy-panel-image">
+        <div className="shell legacy-story">
+          <figure className="legacy-story-portrait">
+            <div className="legacy-story-image">
               <Image
                 src="/willis/pastor.jpg"
                 alt="Portrait of Dr. Jim and Mrs. McKinnies."
                 fill
-                sizes="(max-width: 900px) 100vw, 30vw"
+                sizes="(max-width: 900px) 90vw, 380px"
               />
             </div>
-            <div className="legacy-panel-copy">
-              <p className="eyebrow">Founding Pastor · 1979–2019</p>
-              <h2>Dr. Jim McKinnies</h2>
-              {legacyStory.map((para) => (
-                <p key={para}>{para}</p>
-              ))}
-              <blockquote className="pull-quote">
-                “{pastorQuote.text}”
-                <cite>— {pastorQuote.author}</cite>
-              </blockquote>
-              <p className="life-verse">
-                Pastor and Mrs. McKinnies share the same life verse — {site.verseReference}.
-              </p>
-            </div>
+            <figcaption>Dr. Jim and Mrs. Winetta McKinnies</figcaption>
+          </figure>
+          <div className="legacy-panel-copy">
+            <p className="eyebrow">Founding Pastor · 1979–2019</p>
+            <h2>Dr. Jim McKinnies</h2>
+            {legacyStory.map((para) => (
+              <p key={para}>{para}</p>
+            ))}
+            <blockquote className="pull-quote">
+              “{pastorQuote.text}”
+              <cite>— {pastorQuote.author}</cite>
+            </blockquote>
+            <p className="life-verse">
+              Pastor and Mrs. McKinnies share the same life verse — {site.verseReference}.
+            </p>
           </div>
+        </div>
+      </section>
 
+      <section className="section section-soft">
+        <div className="shell legacy-milestones">
           <div className="card-surface">
             <p className="eyebrow">Milestones</p>
             <h2>Remembering God&apos;s faithfulness.</h2>
@@ -529,6 +534,30 @@ function LegacyPage() {
                 </li>
               ))}
             </ul>
+          </div>
+          <div className="legacy-photo-pair">
+            <figure>
+              <div className="legacy-photo">
+                <Image
+                  src="/willis/church-building.jpg"
+                  alt="The Willis Baptist Church building on Bunton Road."
+                  fill
+                  sizes="(max-width: 900px) 90vw, 520px"
+                />
+              </div>
+              <figcaption>1999 — The present building on Bunton Road</figcaption>
+            </figure>
+            <figure>
+              <div className="legacy-photo">
+                <Image
+                  src="/willis/anniversary.jpg"
+                  alt="Dr. McKinnies receiving his Doctor of Divinity at the church's 40th anniversary."
+                  fill
+                  sizes="(max-width: 900px) 90vw, 520px"
+                />
+              </div>
+              <figcaption>2019 — 40th anniversary and Doctor of Divinity</figcaption>
+            </figure>
           </div>
         </div>
       </section>

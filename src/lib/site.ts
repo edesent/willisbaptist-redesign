@@ -8,7 +8,7 @@ export const site = {
   address: "8687 Bunton Road, Willis, MI 48191",
   mailingAddress: "PO Box 39, Willis, MI 48191",
   phone: "(734) 461-0352",
-  email: "WBC@willisbaptist.org",
+  email: "willisbaptistwbc@gmail.com",
   verse:
     "Trust in the LORD with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
   verseReference: "Proverbs 3:5-6",
@@ -53,6 +53,11 @@ export const serviceTimes = [
     title: "Wednesday Bible Study",
     time: "7:00 PM",
     detail: "A midweek time to grow in Scripture together.",
+  },
+  {
+    title: "Youth Ministry",
+    time: "Thursday 6:00-8:00 PM",
+    detail: "A weeknight gathering for young people to grow in God's Word together.",
   },
   {
     title: "Reformers Unanimous",
