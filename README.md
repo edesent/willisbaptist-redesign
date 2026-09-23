@@ -6,7 +6,8 @@ KJV Bible-believing Baptist church in Willis, Michigan (founded 1979).
 > This is a **redesign preview**, not the live church site yet. The current live
 > site is the original at https://www.willisbaptist.org.
 
-- **Preview site:** https://willisbaptist-redesign.vercel.app
+- **Live site:** https://www.willisbaptist.org (preview alias: https://willisbaptist-redesign.vercel.app)
+- **Old URLs:** every page of the old Wix site 308-redirects to its new home — see `redirects()` in `next.config.ts`. Keep them.
 - **Original site (reference):** https://www.willisbaptist.org
 - **Address:** 8687 Bunton Road, Willis, MI 48191 · Mailing: PO Box 39, Willis, MI 48191
 - **Phone:** (734) 461-0352 · **Email:** WBC@willisbaptist.org

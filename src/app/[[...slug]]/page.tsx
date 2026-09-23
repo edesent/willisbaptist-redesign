@@ -51,26 +51,11 @@ const titleMap: Record<string, string> = {
 
 const aliases: Record<string, keyof typeof titleMap> = {
   "": "home",
-  home: "home",
   visit: "visit",
-  "weekly-schedule": "visit",
-  "upcoming-events": "visit",
   beliefs: "beliefs",
-  "what-we-believe": "beliefs",
   ministries: "ministries",
-  media: "ministries",
-  "reformers-unanamous": "ministries",
-  "reformers-unanimous": "ministries",
-  "bus-ministry": "ministries",
-  "youth-group": "ministries",
-  "ladies-missionary-society": "ministries",
-  "sunday-school": "ministries",
-  gallery: "ministries",
-  "church-activities": "ministries",
-  staff: "legacy",
   legacy: "legacy",
   gospel: "gospel",
-  "the-good-news": "gospel",
   contact: "contact",
 };
 
@@ -98,8 +83,10 @@ export async function generateMetadata({
   params: Promise<Params>;
 }): Promise<Metadata> {
   const key = normalizeKey(routeKey(await params));
-  if (!key || key === "home") return {};
-  return { title: titleMap[key] };
+  if (!key) return {};
+  const path = key === "home" ? "/" : `/${key}`;
+  if (key === "home") return { alternates: { canonical: path } };
+  return { title: titleMap[key], alternates: { canonical: path } };
 }
 
 export default async function Page({ params }: { params: Promise<Params> }) {

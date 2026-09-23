@@ -4,7 +4,7 @@ const routes = ["", "/visit", "/beliefs", "/ministries", "/legacy", "/gospel", "
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return routes.map((route) => ({
-    url: `https://willisbaptist-redesign.vercel.app${route}`,
+    url: `https://www.willisbaptist.org${route}`,
     lastModified: new Date(),
   }));
 }

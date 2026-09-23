@@ -23,7 +23,7 @@ const description =
   "Willis Baptist Church in Willis, Michigan — a local KJV Baptist church committed to Scripture and the gospel of Jesus Christ, faithfully serving families since 1979.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://willisbaptist-redesign.vercel.app"),
+  metadataBase: new URL("https://www.willisbaptist.org"),
   title: {
     default: `${site.name} | Willis, MI`,
     template: `%s | ${site.name}`,
