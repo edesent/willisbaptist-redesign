@@ -1263,7 +1263,12 @@ p {
 
 .legacy-photo-pair {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+}
+
+.legacy-photo-pair figure:last-child {
+  margin-top: 56px;
 }
 
 @media (max-width: 900px) {
@@ -1275,5 +1280,13 @@ p {
   .legacy-story-portrait {
     position: static;
     max-width: 380px;
+  }
+
+  .legacy-photo-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .legacy-photo-pair figure:last-child {
+    margin-top: 0;
   }
 }
