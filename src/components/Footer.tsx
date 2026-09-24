@@ -37,7 +37,12 @@ export function Footer() {
 
       <div className="footer-bar">
         <span>{site.mailingAddress}</span>
-        <span>All services and ministries are centered on Christ and His Word.</span>
+        <span>
+          <a href="https://dfd.llc" target="_blank" rel="noopener">
+            Church website development
+          </a>{" "}
+          by dfd.llc
+        </span>
       </div>
     </footer>
   );

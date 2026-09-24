@@ -1002,6 +1002,17 @@ p {
   font-size: 0.92rem;
 }
 
+.footer-bar a {
+  text-decoration: underline;
+  text-decoration-color: rgba(249, 239, 226, 0.35);
+  text-underline-offset: 3px;
+}
+
+.footer-bar a:hover {
+  color: #f9efe2;
+  text-decoration-color: currentColor;
+}
+
 @media (max-width: 1120px) {
   .hero-shell,
   .intro-grid,
