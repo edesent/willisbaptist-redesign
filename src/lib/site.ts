@@ -22,13 +22,14 @@ export const primaryNav = [
   ["Visit", "/visit"],
   ["Beliefs", "/beliefs"],
   ["Ministries", "/ministries"],
+  ["Events", "/events"],
   ["Legacy", "/legacy"],
   ["Gospel", "/gospel"],
   ["Contact", "/contact"],
 ] as const;
 
 export const heroStats = [
-  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 10:30 AM · Evening 6:00 PM"],
+  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 11:00 AM · Evening 6:00 PM"],
   ["Midweek gathering", "Wednesday Bible study at 7:00 PM"],
   ["Address", "8687 Bunton Road in Willis, Michigan"],
 ] as const;
