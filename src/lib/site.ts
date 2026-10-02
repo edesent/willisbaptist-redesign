@@ -182,7 +182,7 @@ export const legacyMoments = [
 export const legacyStory = [
   "In 1979, Pastor and Mrs. McKinnies came to the Meridian Street church with 26 faithful servants from the Yost Baptist Church of Milan, Michigan.",
   "They labored together and God blessed the work. As the congregation outgrew its building, the church began constructing its present facility on Bunton Road in 1999 — the building it occupies today.",
-  "Over more than 40 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
+  "Over 47 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
 ] as const;
 
 export const pastorQuote = {
