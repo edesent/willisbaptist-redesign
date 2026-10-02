@@ -497,7 +497,7 @@ function LegacyPage() {
             <figcaption>Dr. Jim and Mrs. Winetta McKinnies</figcaption>
           </figure>
           <div className="legacy-panel-copy">
-            <p className="eyebrow">Founding Pastor · 1979–2019</p>
+            <p className="eyebrow">Founding Pastor · 1979–Current</p>
             <h2>Dr. Jim McKinnies</h2>
             {legacyStory.map((para) => (
               <p key={para}>{para}</p>
