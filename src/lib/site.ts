@@ -185,6 +185,28 @@ export const legacyStory = [
   "Over 47 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
 ] as const;
 
+// Upcoming special events. Add a new entry here (and remove it once it has
+// passed) to keep the /events page current.
+export const upcomingEvents = [
+  {
+    title: "WBC 47th Anniversary Celebration",
+    dateLabel: "Sunday, October 11",
+    schedule: [
+      "9:45 AM — Sunday School",
+      "11:00 AM — Morning Worship",
+      "6:00 PM — PRAISE Service",
+      "Afterglow fellowship following the evening service",
+    ],
+    body: "Join us as we celebrate Pastor Jim McKinnies' 47th anniversary as the founding pastor of Willis Baptist Church.",
+  },
+  {
+    title: "Revival Meetings with Evangelist Bob Jones",
+    dateLabel: "October 11–16",
+    schedule: ["7:00 PM each week night"],
+    body: "A week of revival services with Evangelist Bob Jones, held alongside the church's 47th anniversary celebration.",
+  },
+] as const;
+
 export const pastorQuote = {
   text: "A ministry is made up of many faithful servants who serve and make it what it is.",
   author: "Pastor Jim McKinnies",
