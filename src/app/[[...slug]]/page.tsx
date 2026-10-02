@@ -32,6 +32,7 @@ import {
   primaryNav,
   serviceTimes,
   site,
+  upcomingEvents,
   welcomePoints,
 } from "@/lib/site";
 
