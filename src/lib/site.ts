@@ -22,6 +22,7 @@ export const primaryNav = [
   ["Visit", "/visit"],
   ["Beliefs", "/beliefs"],
   ["Ministries", "/ministries"],
+  ["Events", "/events"],
   ["Legacy", "/legacy"],
   ["Gospel", "/gospel"],
   ["Contact", "/contact"],
