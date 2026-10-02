@@ -474,6 +474,35 @@ function MinistriesPage() {
   );
 }
 
+function EventsPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Upcoming Events"
+        title="What's happening at Willis Baptist."
+        body="Special services, revival meetings, and church-wide celebrations — check here for what's coming up."
+      />
+
+      <section className="section">
+        <div className="shell visit-grid">
+          {upcomingEvents.map((event) => (
+            <div className="card-surface" key={event.title}>
+              <p className="eyebrow">{event.dateLabel}</p>
+              <h2>{event.title}</h2>
+              <p>{event.body}</p>
+              <ul className="bullet-list">
+                {event.schedule.map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LegacyPage() {
   return (
     <>
