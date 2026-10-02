@@ -104,6 +104,8 @@ export default async function Page({ params }: { params: Promise<Params> }) {
       return <BeliefsPage />;
     case "ministries":
       return <MinistriesPage />;
+    case "events":
+      return <EventsPage />;
     case "legacy":
       return <LegacyPage />;
     case "gospel":
