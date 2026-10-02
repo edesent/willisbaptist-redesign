@@ -42,7 +42,7 @@ export const serviceTimes = [
   },
   {
     title: "Morning Worship",
-    time: "10:30 AM",
+    time: "11:00 AM",
     detail: "Congregational worship and preaching from the King James Bible.",
   },
   {
