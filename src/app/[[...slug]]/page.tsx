@@ -265,7 +265,7 @@ function HomePage() {
         <div className="shell legacy-feature">
           <div className="legacy-copy">
             <p className="eyebrow">Founding pastor</p>
-            <h2>Over 40 years of faithful pastoral ministry.</h2>
+            <h2>Over 47 years of faithful pastoral ministry.</h2>
             <p>
               Since 1979, God has built Willis Baptist Church through the faithful ministry of
               Pastor and Mrs. McKinnies — from a small group of 26 servants to the church family
