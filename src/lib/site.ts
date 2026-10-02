@@ -22,13 +22,14 @@ export const primaryNav = [
   ["Visit", "/visit"],
   ["Beliefs", "/beliefs"],
   ["Ministries", "/ministries"],
+  ["Events", "/events"],
   ["Legacy", "/legacy"],
   ["Gospel", "/gospel"],
   ["Contact", "/contact"],
 ] as const;
 
 export const heroStats = [
-  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 10:30 AM · Evening 6:00 PM"],
+  ["Sunday gatherings", "Sunday School 9:45 AM · Morning Worship 11:00 AM · Evening 6:00 PM"],
   ["Midweek gathering", "Wednesday Bible study at 7:00 PM"],
   ["Address", "8687 Bunton Road in Willis, Michigan"],
 ] as const;
@@ -41,7 +42,7 @@ export const serviceTimes = [
   },
   {
     title: "Morning Worship",
-    time: "10:30 AM",
+    time: "11:00 AM",
     detail: "Congregational worship and preaching from the King James Bible.",
   },
   {
@@ -171,6 +172,28 @@ export const beliefs = [
   },
 ] as const;
 
+export const upcomingEvents = [
+  {
+    slug: "47th-anniversary",
+    dateLabel: "Sunday, October 11",
+    title: "WBC 47th Anniversary Celebration",
+    body: "Celebrating Pastor McKinnies' 47th anniversary as the founding pastor of Willis Baptist Church.",
+    details: [
+      "9:45 AM — Sunday School",
+      "11:00 AM — Morning Worship",
+      "6:00 PM — PRAISE Service",
+      "Afterglow following the evening service",
+    ],
+  },
+  {
+    slug: "revival-meetings",
+    dateLabel: "October 11–16",
+    title: "Revival Meetings with Evangelist Bob Jones",
+    body: "A week of revival preaching with Evangelist Bob Jones.",
+    details: ["7:00 PM each week night"],
+  },
+] as const;
+
 export const legacyMoments = [
   "1979 — Pastor and Mrs. McKinnies arrive at the Meridian Street church with 26 faithful servants from Yost Baptist Church of Milan, MI.",
   "1999 — As the church outgrows its building, the present facility on Bunton Road is built.",
@@ -181,7 +204,7 @@ export const legacyMoments = [
 export const legacyStory = [
   "In 1979, Pastor and Mrs. McKinnies came to the Meridian Street church with 26 faithful servants from the Yost Baptist Church of Milan, Michigan.",
   "They labored together and God blessed the work. As the congregation outgrew its building, the church began constructing its present facility on Bunton Road in 1999 — the building it occupies today.",
-  "Over more than 40 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
+  "Over 47 years, Pastor and Mrs. McKinnies have been faithful soulwinners and loving ministers to their church family, and Pastor has unapologetically preached the gospel of the Lord Jesus Christ. Through this work, many souls have been saved and lives changed, to the glory of God.",
 ] as const;
 
 export const pastorQuote = {

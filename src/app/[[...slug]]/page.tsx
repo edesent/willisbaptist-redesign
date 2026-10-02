@@ -32,6 +32,7 @@ import {
   primaryNav,
   serviceTimes,
   site,
+  upcomingEvents,
   welcomePoints,
 } from "@/lib/site";
 
@@ -44,6 +45,7 @@ const titleMap: Record<string, string> = {
   visit: "Visit",
   beliefs: "Beliefs",
   ministries: "Ministries",
+  events: "Events",
   legacy: "Legacy",
   gospel: "The Gospel",
   contact: "Contact",
@@ -54,6 +56,7 @@ const aliases: Record<string, keyof typeof titleMap> = {
   visit: "visit",
   beliefs: "beliefs",
   ministries: "ministries",
+  events: "events",
   legacy: "legacy",
   gospel: "gospel",
   contact: "contact",
@@ -101,6 +104,8 @@ export default async function Page({ params }: { params: Promise<Params> }) {
       return <BeliefsPage />;
     case "ministries":
       return <MinistriesPage />;
+    case "events":
+      return <EventsPage />;
     case "legacy":
       return <LegacyPage />;
     case "gospel":
@@ -260,7 +265,7 @@ function HomePage() {
         <div className="shell legacy-feature">
           <div className="legacy-copy">
             <p className="eyebrow">Founding pastor</p>
-            <h2>Over 40 years of faithful pastoral ministry.</h2>
+            <h2>Over 47 years of faithful pastoral ministry.</h2>
             <p>
               Since 1979, God has built Willis Baptist Church through the faithful ministry of
               Pastor and Mrs. McKinnies — from a small group of 26 servants to the church family
@@ -469,6 +474,40 @@ function MinistriesPage() {
   );
 }
 
+function EventsPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Upcoming Events"
+        title="What's happening at Willis Baptist."
+        body="Join us for these special services this October."
+      />
+
+      <section className="section">
+        <div className="shell">
+          <div className="stack-cards">
+            {upcomingEvents.map((event) => (
+              <article className="card-surface" key={event.slug}>
+                <p className="eyebrow">{event.dateLabel}</p>
+                <h2>{event.title}</h2>
+                <p>{event.body}</p>
+                <ul className="check-list">
+                  {event.details.map((detail) => (
+                    <li key={detail}>
+                      <CheckCircle2 size={18} />
+                      <span>{detail}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
 function LegacyPage() {
   return (
     <>
@@ -492,7 +531,7 @@ function LegacyPage() {
             <figcaption>Dr. Jim and Mrs. Winetta McKinnies</figcaption>
           </figure>
           <div className="legacy-panel-copy">
-            <p className="eyebrow">Founding Pastor · 1979–2019</p>
+            <p className="eyebrow">Founding Pastor · 1979–Present</p>
             <h2>Dr. Jim McKinnies</h2>
             {legacyStory.map((para) => (
               <p key={para}>{para}</p>
