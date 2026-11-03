@@ -174,23 +174,32 @@ export const beliefs = [
 
 export const upcomingEvents = [
   {
-    slug: "47th-anniversary",
-    dateLabel: "Sunday, October 11",
-    title: "WBC 47th Anniversary Celebration",
-    body: "Celebrating Pastor McKinnies' 47th anniversary as the founding pastor of Willis Baptist Church.",
-    details: [
-      "9:45 AM — Sunday School",
-      "11:00 AM — Morning Worship",
-      "6:00 PM — PRAISE Service",
-      "Afterglow following the evening service",
-    ],
+    slug: "ladies-missionary-society-nov",
+    dateLabel: "Monday, November 9",
+    title: "Ladies Missionary Society",
+    body: "Women of the church gathering to pray for and encourage missionaries serving around the world.",
+    details: ["6:30 PM"],
   },
   {
-    slug: "revival-meetings",
-    dateLabel: "October 11–16",
-    title: "Revival Meetings with Evangelist Bob Jones",
-    body: "A week of revival preaching with Evangelist Bob Jones.",
-    details: ["7:00 PM each week night"],
+    slug: "board-fellowship",
+    dateLabel: "Saturday, November 14",
+    title: "Board Fellowship",
+    body: "A time of fellowship for the church board.",
+    details: ["6:30 PM"],
+  },
+  {
+    slug: "skate-night",
+    dateLabel: "Thursday, November 19",
+    title: "Skate Night",
+    body: "An evening of skating and fellowship at Sumpter Roller Rink.",
+    details: ["6:00-9:00 PM", "$7.00, including skate rental"],
+  },
+  {
+    slug: "thanksgiving-feast",
+    dateLabel: "Wednesday, November 25",
+    title: "Thanksgiving \"Feast\"",
+    body: "The church family gathers for a Thanksgiving meal together.",
+    details: [],
   },
 ] as const;
 
